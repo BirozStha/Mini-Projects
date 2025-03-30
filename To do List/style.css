@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    transition: background 0.5s ease;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+
+}
+
+.todo-app h2 img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#todo-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #edeef0;
+    border-radius: 30px;
+    height: 50px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: #ff5945;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: 3px; 
+    height: 50px; 
+    white-space: nowrap; 
+    flex-shrink: 0;
+}
+#clear-all {
+    background: #555;
+    padding: 10px 20px;
+}
+
+/* Hover effects for both buttons */
+button:hover {
+    opacity: 0.9;
+}
+
+#clear-all:hover {
+    background: #333;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    cursor: pointer;
+    width: 30px; /* Reduced size */
+    height: 30px; /* Reduced size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-toggle img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.dark-mode-toggle:hover img {
+    transform: scale(1.5);
+}
+
+/* Initial icon states */
+#moon-icon { 
+    display: none;
+}
+
+/* Dark Mode Theme Colors */
+.dark-mode .container{
+    /* background: linear-gradient(135deg, #0a1a3a, #2d0433);*/
+    /* background: linear-gradient(135deg, #121212, #1a0033); */
+    background: linear-gradient(135deg, #2e2e2e, black);
+}
+
+.dark-mode .todo-app {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-mode ul li {
+    color: #d0d0d0;
+}
+
+.dark-mode .todo-app h2{
+    color: #0956d3;
+}
+
+/* Dark mode icon states */
+.dark-mode #moon-icon { display: block; }
+.dark-mode #sun-icon { display: none; }
+
+.container, .todo-app, ul li {
+    transition: background 0.5s ease, color 0.3s ease;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; /* For absolute positioning if needed */
+}
