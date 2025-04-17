@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameDiv">
+        <h1 class="gameText" id="playerText">Player: </h1>
+        <h1 class="gameText" id="computerText">Computer: </h1>
+        <h1 class="gameText" id="resultText">Result: </h1>  
+
+        <button class="choiceBtn">ROCK</button>
+        <button class="choiceBtn">PAPER</button>
+        <button class="choiceBtn">SCISSORS</button>
+    </div>
+
+    <button id="resetBtn">New Game</button>
+    
+    <div id="scoreBoard">
+        <h2>Score</h2>
+        <p id="playerScore">Player: 0</p>
+        <p id="computerScore">Computer: 0</p>
+        <p id="drawScore">Draws: 0</p>
+    </div>
+    
+    <div id="history">
+        <h2>Match History (Last 10)</h2>
+        <ul id="historyList"></ul>
+    </div>
+
+    <button id="toggleDark">Toggle Dark Mode</button>
+
+
+   
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

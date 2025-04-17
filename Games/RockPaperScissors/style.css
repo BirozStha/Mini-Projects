@@ -1,0 +1,144 @@
+.choiceBtn{
+    line-height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.choiceBtn:hover{
+    background-color: #989393;
+    color: white;
+}
+
+#gameDiv{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid #333;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgb(208, 208, 208);
+    text-align: center;
+    width: 400px;
+    margin: 100px auto;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gameText {
+    margin: 10px 0;
+}
+
+#playerText{
+    color: blue;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #00000050;
+}
+
+#computerText{
+    color: red;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #00000050;
+}
+
+/* score and match history */
+#scoreBoard, #history {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    border: 3px solid #333;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+#scoreBoard h2,
+#history h2 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#scoreBoard p,
+#history p {
+    font-size: 20px; /* or adjust to your preference */
+}
+
+#historyList {
+    list-style-type: decimal;
+    padding-left: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    
+
+}
+
+#historyList li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#resetBtn {
+    margin-top: 5pxpx;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1e9e2a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetBtn:hover {
+    background-color: #0deb48;
+}
+
+
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode #gameDiv {
+    background-color: #2a2a2a;
+    border-color: #555;
+}
+
+.dark-mode .choiceBtn {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .choiceBtn:hover {
+    background-color: #666;
+}
+
+.dark-mode #scoreBoard,
+.dark-mode #history {
+    background-color: #333;
+    border-color: #555;
+}
+
+#toggleDark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggleDark:hover {
+    background-color: #666;
+}
