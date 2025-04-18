@@ -1,0 +1,47 @@
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#gameContainer{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+#note {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.cell.win {
+    background-color: lightgreen;
+}
+
+#scoreboard {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+#scoreboard h3 {
+    margin-bottom: 10px;
+}
+
+#scoreboard p {
+    margin: 5px 0;
+}
+
